@@ -63,11 +63,11 @@
       39,
       40
     ],
-    "visible_layers": "ffc9180_ffffffff",
+    "visible_layers": "ffc1020_fffffffe",
     "zone_display_mode": 0
   },
   "meta": {
-    "filename": "CAN Bus 1051-3.kicad_prl",
+    "filename": "CAN Bus 1051-3 alt.kicad_prl",
     "version": 3
   },
   "project": {

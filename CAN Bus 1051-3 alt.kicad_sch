@@ -457,6 +457,35 @@
         )
       )
     )
+    (symbol "Mechanical:MountingHole" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+      (property "Reference" "H" (at 0 5.08 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "MountingHole" (at 0 3.175 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "~" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "mounting hole" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Mounting Hole without connection" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_fp_filters" "MountingHole*" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "MountingHole_0_1"
+        (circle (center 0 0) (radius 1.27)
+          (stroke (width 1.27) (type default))
+          (fill (type none))
+        )
+      )
+    )
     (symbol "power:+3V3" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
       (property "Reference" "#PWR" (at 0 -3.81 0)
         (effects (font (size 1.27 1.27)) hide)
@@ -606,20 +635,14 @@
   (junction (at 205.74 82.55) (diameter 0) (color 0 0 0 0)
     (uuid 0af0e935-8d43-4266-aa8f-4ae6d1b3b72d)
   )
+  (junction (at 99.06 71.12) (diameter 0) (color 0 0 0 0)
+    (uuid 2ee191a3-cca5-4e2e-8dec-8ba87c5fccbe)
+  )
   (junction (at 205.74 99.06) (diameter 0) (color 0 0 0 0)
     (uuid 3274faa5-1d23-4256-be5f-068c3f7ca4a3)
   )
   (junction (at 139.7 80.01) (diameter 0) (color 0 0 0 0)
     (uuid 53e69ad3-bc4c-4731-a9fb-cb7e894d0320)
-  )
-  (junction (at 129.54 62.23) (diameter 0) (color 0 0 0 0)
-    (uuid 715c0bcf-4203-4a8b-a185-0e8f7b80e7f7)
-  )
-  (junction (at 132.08 72.39) (diameter 0) (color 0 0 0 0)
-    (uuid 77854e6b-b4d2-48b2-a5d8-c7dc8d81a994)
-  )
-  (junction (at 125.73 66.04) (diameter 0) (color 0 0 0 0)
-    (uuid 834f98b8-522d-4db8-af48-e91978429b73)
   )
   (junction (at 153.67 100.33) (diameter 0) (color 0 0 0 0)
     (uuid 8392bb55-9541-40a4-b0ca-7dc4a2ad99ef)
@@ -630,6 +653,12 @@
   (junction (at 114.3 100.33) (diameter 0) (color 0 0 0 0)
     (uuid 88880fd3-7edf-4a3b-acde-d5cfc0efbe77)
   )
+  (junction (at 96.52 76.2) (diameter 0) (color 0 0 0 0)
+    (uuid a36aac5e-951c-4ec3-818f-c6e7bd2676aa)
+  )
+  (junction (at 114.3 73.66) (diameter 0) (color 0 0 0 0)
+    (uuid a3edb694-40ec-442d-a261-58e632fc410b)
+  )
   (junction (at 205.74 114.3) (diameter 0) (color 0 0 0 0)
     (uuid a914a5e5-f3f3-48d1-894c-5041b9b99dc0)
   )
@@ -637,10 +666,6 @@
     (uuid c2d44625-6d0f-420b-9c76-d55e5a1dfa60)
   )
 
-  (wire (pts (xy 132.08 74.93) (xy 106.68 74.93))
-    (stroke (width 0) (type default))
-    (uuid 08f197d9-474f-4d1f-a19e-197f9e70165f)
-  )
   (wire (pts (xy 105.41 92.71) (xy 105.41 100.33))
     (stroke (width 0) (type default))
     (uuid 0a49f4bc-1ce0-40dd-a6a3-2f4701fd1468)
@@ -653,7 +678,7 @@
     (stroke (width 0) (type default))
     (uuid 21ba2967-cc7a-4a52-bc83-e7aa7334038d)
   )
-  (wire (pts (xy 129.54 69.85) (xy 106.68 69.85))
+  (wire (pts (xy 81.28 76.2) (xy 96.52 76.2))
     (stroke (width 0) (type default))
     (uuid 22dbc9fc-b0dc-4fd1-8b10-4529cff32147)
   )
@@ -665,14 +690,6 @@
     (stroke (width 0) (type default))
     (uuid 3f72b2dd-47c3-4473-b964-04c0a6df4eb7)
   )
-  (wire (pts (xy 226.06 82.55) (xy 226.06 96.52))
-    (stroke (width 0) (type default))
-    (uuid 42c7232b-93ea-4939-a45b-0d9f0126766f)
-  )
-  (wire (pts (xy 132.08 72.39) (xy 132.08 74.93))
-    (stroke (width 0) (type default))
-    (uuid 48bebd09-7982-4738-b141-097331de2a71)
-  )
   (wire (pts (xy 139.7 110.49) (xy 139.7 107.95))
     (stroke (width 0) (type default))
     (uuid 49e83b4f-327e-4489-b5f0-d45d34442c89)
@@ -681,11 +698,11 @@
     (stroke (width 0) (type default))
     (uuid 4d049bd2-390a-40e8-8f31-67be45a39ee9)
   )
-  (wire (pts (xy 132.08 69.85) (xy 132.08 72.39))
+  (wire (pts (xy 114.3 71.12) (xy 114.3 73.66))
     (stroke (width 0) (type default))
     (uuid 509d01cd-696b-4f3a-8d57-53c1ddde6a8b)
   )
-  (wire (pts (xy 106.68 67.31) (xy 121.92 67.31))
+  (wire (pts (xy 81.28 68.58) (xy 96.52 68.58))
     (stroke (width 0) (type default))
     (uuid 5781182f-2389-4ca2-96f2-3233ce917ac7)
   )
@@ -701,6 +718,10 @@
     (stroke (width 0) (type default))
     (uuid 5d9f14f6-8489-48d2-bb9f-47a4bfaea988)
   )
+  (wire (pts (xy 226.06 101.6) (xy 226.06 114.3))
+    (stroke (width 0) (type default))
+    (uuid 5f8469b7-bfda-48c6-ad37-aedf1d1bc61f)
+  )
   (wire (pts (xy 205.74 109.22) (xy 205.74 107.95))
     (stroke (width 0) (type default))
     (uuid 5fa087c9-0f29-42e7-aca5-7309c400798c)
@@ -709,11 +730,7 @@
     (stroke (width 0) (type default))
     (uuid 61bcf1e9-ff64-449f-813f-e25de91ef00c)
   )
-  (wire (pts (xy 106.68 72.39) (xy 121.92 72.39))
-    (stroke (width 0) (type default))
-    (uuid 62cb7350-e06c-43c0-b1a3-0ea384f9f85f)
-  )
-  (wire (pts (xy 129.54 59.69) (xy 129.54 62.23))
+  (wire (pts (xy 99.06 68.58) (xy 99.06 71.12))
     (stroke (width 0) (type default))
     (uuid 63412312-73f3-476b-b05c-4ef295c0ed6d)
   )
@@ -724,6 +741,10 @@
   (wire (pts (xy 205.74 99.06) (xy 205.74 101.6))
     (stroke (width 0) (type default))
     (uuid 699100de-3995-41f4-946c-66d4639b098d)
+  )
+  (wire (pts (xy 99.06 71.12) (xy 81.28 71.12))
+    (stroke (width 0) (type default))
+    (uuid 7c43c72f-5cc8-403e-90a1-85acf9a3088f)
   )
   (wire (pts (xy 179.07 100.33) (xy 179.07 114.3))
     (stroke (width 0) (type default))
@@ -745,14 +766,6 @@
     (stroke (width 0) (type default))
     (uuid 92d9803b-1f4c-41ab-b03e-2ef5feda06cc)
   )
-  (wire (pts (xy 226.06 114.3) (xy 226.06 101.6))
-    (stroke (width 0) (type default))
-    (uuid 92ea66e6-0e8e-454f-af30-9aba6a7efa6d)
-  )
-  (wire (pts (xy 121.92 66.04) (xy 125.73 66.04))
-    (stroke (width 0) (type default))
-    (uuid 97ae0f0d-9d03-4f49-bb50-57ea5cdf91f2)
-  )
   (wire (pts (xy 125.73 102.87) (xy 127 102.87))
     (stroke (width 0) (type default))
     (uuid 9f2f0f4a-57b1-409e-81bb-e2a766e61521)
@@ -760,6 +773,10 @@
   (wire (pts (xy 198.12 99.06) (xy 205.74 99.06))
     (stroke (width 0) (type default))
     (uuid be3202e3-b0f6-476e-bc4e-bfb17619bcab)
+  )
+  (wire (pts (xy 226.06 82.55) (xy 226.06 96.52))
+    (stroke (width 0) (type default))
+    (uuid bf850459-a286-4280-ab06-94ecce33ef1c)
   )
   (wire (pts (xy 118.11 92.71) (xy 127 92.71))
     (stroke (width 0) (type default))
@@ -769,10 +786,6 @@
     (stroke (width 0) (type default))
     (uuid c21afc31-7638-4022-9995-396668b9b051)
   )
-  (wire (pts (xy 121.92 67.31) (xy 121.92 66.04))
-    (stroke (width 0) (type default))
-    (uuid c3703361-4553-464e-92d8-c70d3758d12c)
-  )
   (wire (pts (xy 161.29 102.87) (xy 161.29 95.25))
     (stroke (width 0) (type default))
     (uuid cb851d1b-7d4a-4bbf-b31c-227adeda96f4)
@@ -781,9 +794,13 @@
     (stroke (width 0) (type default))
     (uuid df0975ae-cf30-4074-87bc-c2a4019a9cc7)
   )
-  (wire (pts (xy 106.68 64.77) (xy 121.92 64.77))
+  (wire (pts (xy 81.28 66.04) (xy 96.52 66.04))
     (stroke (width 0) (type default))
     (uuid e7b1a25b-ab5e-4421-b55c-44bc55442fdd)
+  )
+  (wire (pts (xy 81.28 73.66) (xy 114.3 73.66))
+    (stroke (width 0) (type default))
+    (uuid eca82d89-d259-4576-9be1-676c84032d0b)
   )
   (wire (pts (xy 152.4 100.33) (xy 153.67 100.33))
     (stroke (width 0) (type default))
@@ -792,10 +809,6 @@
   (wire (pts (xy 205.74 97.79) (xy 205.74 99.06))
     (stroke (width 0) (type default))
     (uuid f07de1fc-0f5a-4b03-8c6a-c791856181c3)
-  )
-  (wire (pts (xy 129.54 62.23) (xy 129.54 69.85))
-    (stroke (width 0) (type default))
-    (uuid f52d139f-9a43-4d12-8702-37b8bf58cd31)
   )
   (wire (pts (xy 179.07 82.55) (xy 205.74 82.55))
     (stroke (width 0) (type default))
@@ -807,7 +820,7 @@
     (uuid e2b1950d-637f-40bf-9dd0-f3f697caebca)
   )
 
-  (label "CAN_TX" (at 111.76 64.77 0) (fields_autoplaced)
+  (label "CAN_TX" (at 86.36 66.04 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 073923f2-d1af-4ce9-9466-80ffb64fb542)
   )
@@ -815,45 +828,53 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 0e99ad15-0632-4d09-8b4f-ddef0378ae22)
   )
-  (label "CAN_RX" (at 111.76 72.39 0) (fields_autoplaced)
+  (label "CAN_RX" (at 86.36 68.58 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 23bf2246-e88b-4af2-87c8-de681b473e35)
+    (uuid 18b5a085-1f22-442d-b02e-df6c0bd55dd0)
   )
   (label "CL" (at 152.4 100.33 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 36fc44fe-f0e4-4cfd-be69-e08e6c774d36)
   )
-  (label "GND" (at 116.84 67.31 0) (fields_autoplaced)
+  (label "+3V3" (at 86.36 73.66 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 3f20ba3c-1864-4e33-ad68-d9d8bb7eeedf)
+    (uuid 52b8fbc8-0b58-4ad2-bd72-0435b3f13009)
   )
   (label "CH" (at 152.4 95.25 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 57c70467-3876-47b7-8419-093b48a1c6c1)
   )
+  (label "GND" (at 86.36 76.2 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 5be6c4a8-1bbd-4f32-859a-6e018cafd71c)
+  )
   (label "CAN_TX" (at 118.11 92.71 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 62d44777-dbd0-49a0-808b-7b1379d1f83b)
   )
+  (label "+4V" (at 86.36 71.12 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 80dc7e08-1a4a-4c30-b24e-75e30197db40)
+  )
 
-  (symbol (lib_id "power:PWR_FLAG") (at 125.73 66.04 0) (unit 1)
+  (symbol (lib_id "power:PWR_FLAG") (at 96.52 76.2 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0db53ac6-281e-4d29-ab06-3169316b48fb)
-    (property "Reference" "#FLG03" (at 125.73 64.135 0)
+    (property "Reference" "#FLG03" (at 98.425 76.2 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "PWR_FLAG" (at 123.19 62.23 0)
+    (property "Value" "PWR_FLAG" (at 104.14 76.2 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 125.73 66.04 0)
+    (property "Footprint" "" (at 96.52 76.2 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 125.73 66.04 0)
+    (property "Datasheet" "~" (at 96.52 76.2 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 829e35a5-d7bc-40cd-ac40-9e6d502e8c8c))
     (instances
-      (project "CAN Bus 1051-3"
+      (project "CAN Bus 1051-3 alt"
         (path "/3c4f2f61-f2e4-453b-9b61-3175a2246669"
           (reference "#FLG03") (unit 1)
         )
@@ -882,7 +903,7 @@
     (pin "2" (uuid 54c5a387-2c58-4f7e-b3c8-71638ac19fd8))
     (pin "1" (uuid c76e53fd-1047-46f9-8ad7-6997991f2454))
     (instances
-      (project "CAN Bus 1051-3"
+      (project "CAN Bus 1051-3 alt"
         (path "/3c4f2f61-f2e4-453b-9b61-3175a2246669"
           (reference "JP1") (unit 1)
         )
@@ -911,7 +932,7 @@
     (pin "2" (uuid 97fcddd3-13d8-42a4-b5c9-2e993453a787))
     (pin "1" (uuid 0bdb42b8-a939-45d7-8d67-67180fd5be4b))
     (instances
-      (project "CAN Bus 1051-3"
+      (project "CAN Bus 1051-3 alt"
         (path "/3c4f2f61-f2e4-453b-9b61-3175a2246669"
           (reference "JP2") (unit 1)
         )
@@ -936,7 +957,7 @@
     )
     (pin "1" (uuid 2bcf8113-776e-4dbd-bf12-b1dc7881ea32))
     (instances
-      (project "CAN Bus 1051-3"
+      (project "CAN Bus 1051-3 alt"
         (path "/3c4f2f61-f2e4-453b-9b61-3175a2246669"
           (reference "#PWR013") (unit 1)
         )
@@ -944,24 +965,24 @@
     )
   )
 
-  (symbol (lib_name "GND_1") (lib_id "power:GND") (at 125.73 66.04 0) (unit 1)
+  (symbol (lib_name "GND_1") (lib_id "power:GND") (at 96.52 76.2 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 25684f30-efa5-49f2-ae8d-80a8eb1b2b98)
-    (property "Reference" "#PWR03" (at 125.73 72.39 0)
+    (property "Reference" "#PWR03" (at 96.52 82.55 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "GND" (at 125.73 71.12 0)
+    (property "Value" "GND" (at 96.52 81.28 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "" (at 125.73 66.04 0)
+    (property "Footprint" "" (at 96.52 76.2 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 125.73 66.04 0)
+    (property "Datasheet" "" (at 96.52 76.2 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 7909ae83-412f-41ff-b7da-0f4e923af2cf))
     (instances
-      (project "CAN Bus 1051-3"
+      (project "CAN Bus 1051-3 alt"
         (path "/3c4f2f61-f2e4-453b-9b61-3175a2246669"
           (reference "#PWR03") (unit 1)
         )
@@ -969,22 +990,22 @@
     )
   )
 
-  (symbol (lib_id "Connector:Conn_01x05_Pin") (at 101.6 69.85 0) (unit 1)
+  (symbol (lib_id "Connector:Conn_01x05_Pin") (at 76.2 71.12 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 348f3579-ca67-4c3d-ab11-b7ecdb4a3520)
-    (property "Reference" "J1" (at 102.235 59.69 0)
+    (property "Reference" "J1" (at 76.835 60.96 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "Conn_01x05_Pin" (at 102.235 62.23 0)
+    (property "Value" "Conn_01x05_Pin" (at 76.835 63.5 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" (at 101.6 69.85 0)
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" (at 76.2 71.12 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 101.6 69.85 0)
+    (property "Datasheet" "~" (at 76.2 71.12 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Note" "DNP" (at 101.6 69.85 0)
+    (property "Note" "DNP" (at 76.2 71.12 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "3" (uuid 949ea449-97ee-4005-b9ac-3ca70b75c6ca))
@@ -993,7 +1014,7 @@
     (pin "5" (uuid 322c4d7c-ae96-431a-b21c-b999a35cd750))
     (pin "4" (uuid bd8a6ac1-af57-4b18-9a03-05c7ecddc295))
     (instances
-      (project "CAN Bus 1051-3"
+      (project "CAN Bus 1051-3 alt"
         (path "/3c4f2f61-f2e4-453b-9b61-3175a2246669"
           (reference "J1") (unit 1)
         )
@@ -1028,7 +1049,7 @@
     (pin "1" (uuid 02f8c3b4-bd02-4a36-9833-81c7240d4a1c))
     (pin "2" (uuid 36f61a8b-19d7-4d6d-b525-a5b7ccfffb4f))
     (instances
-      (project "CAN Bus 1051-3"
+      (project "CAN Bus 1051-3 alt"
         (path "/3c4f2f61-f2e4-453b-9b61-3175a2246669"
           (reference "R1") (unit 1)
         )
@@ -1036,26 +1057,74 @@
     )
   )
 
-  (symbol (lib_id "power:PWR_FLAG") (at 129.54 62.23 270) (unit 1)
+  (symbol (lib_id "Mechanical:MountingHole") (at 237.49 113.03 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 4dfa26a7-ae14-453b-84b3-113b971e118e)
-    (property "Reference" "#FLG02" (at 131.445 62.23 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "PWR_FLAG" (at 133.35 62.23 90)
+    (uuid 40cfecc6-13cb-4e8c-af63-fb6714d8f2df)
+    (property "Reference" "H1" (at 240.03 111.76 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 129.54 62.23 0)
+    (property "Value" "MountingHole" (at 240.03 114.3 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "MountingHole:MountingHole_2.2mm_M2" (at 237.49 113.03 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 129.54 62.23 0)
+    (property "Datasheet" "~" (at 237.49 113.03 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (instances
+      (project "CAN Bus 1051-3 alt"
+        (path "/3c4f2f61-f2e4-453b-9b61-3175a2246669"
+          (reference "H1") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:PWR_FLAG") (at 99.06 71.12 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 4dfa26a7-ae14-453b-84b3-113b971e118e)
+    (property "Reference" "#FLG02" (at 100.965 71.12 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "PWR_FLAG" (at 102.87 71.12 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "" (at 99.06 71.12 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 99.06 71.12 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 46121521-3784-4a0c-a9f4-ac4b54ec38a3))
     (instances
-      (project "CAN Bus 1051-3"
+      (project "CAN Bus 1051-3 alt"
         (path "/3c4f2f61-f2e4-453b-9b61-3175a2246669"
           (reference "#FLG02") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Mechanical:MountingHole") (at 237.49 119.38 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 5102efdf-acd5-4c59-b249-b8fefcae32c1)
+    (property "Reference" "H2" (at 240.03 118.11 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "MountingHole" (at 240.03 120.65 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "MountingHole:MountingHole_2.2mm_M2" (at 237.49 119.38 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 237.49 119.38 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (instances
+      (project "CAN Bus 1051-3 alt"
+        (path "/3c4f2f61-f2e4-453b-9b61-3175a2246669"
+          (reference "H2") (unit 1)
         )
       )
     )
@@ -1092,7 +1161,7 @@
     (pin "7" (uuid 28df2d77-e4ee-4608-949d-282b5ab0f8dd))
     (pin "8" (uuid 79b69daf-fbaf-459e-94e7-33a0d0f724c3))
     (instances
-      (project "CAN Bus 1051-3"
+      (project "CAN Bus 1051-3 alt"
         (path "/3c4f2f61-f2e4-453b-9b61-3175a2246669"
           (reference "U1") (unit 1)
         )
@@ -1117,7 +1186,7 @@
     )
     (pin "1" (uuid 0d697bcd-d905-4f1d-b9be-d9848e1d2f2a))
     (instances
-      (project "CAN Bus 1051-3"
+      (project "CAN Bus 1051-3 alt"
         (path "/3c4f2f61-f2e4-453b-9b61-3175a2246669"
           (reference "#PWR02") (unit 1)
         )
@@ -1142,7 +1211,7 @@
     )
     (pin "1" (uuid 8e59e073-008c-4b70-94cd-537c8fd7c6a1))
     (instances
-      (project "CAN Bus 1051-3"
+      (project "CAN Bus 1051-3 alt"
         (path "/3c4f2f61-f2e4-453b-9b61-3175a2246669"
           (reference "#PWR07") (unit 1)
         )
@@ -1177,7 +1246,7 @@
     (pin "2" (uuid 23b6159e-bea2-4f80-895d-6c7bf0eaa6b2))
     (pin "1" (uuid 26db5324-7ccc-42c0-a697-37a987ab4b6a))
     (instances
-      (project "CAN Bus 1051-3"
+      (project "CAN Bus 1051-3 alt"
         (path "/3c4f2f61-f2e4-453b-9b61-3175a2246669"
           (reference "R2") (unit 1)
         )
@@ -1202,7 +1271,7 @@
     )
     (pin "1" (uuid 9fd90e00-420d-41f5-8f0d-f9c1b45152b2))
     (instances
-      (project "CAN Bus 1051-3"
+      (project "CAN Bus 1051-3 alt"
         (path "/3c4f2f61-f2e4-453b-9b61-3175a2246669"
           (reference "#PWR09") (unit 1)
         )
@@ -1227,7 +1296,7 @@
     )
     (pin "1" (uuid 0170cf46-dfee-4949-a1eb-5cb24fb07f43))
     (instances
-      (project "CAN Bus 1051-3"
+      (project "CAN Bus 1051-3 alt"
         (path "/3c4f2f61-f2e4-453b-9b61-3175a2246669"
           (reference "#PWR08") (unit 1)
         )
@@ -1252,7 +1321,7 @@
     )
     (pin "1" (uuid 9df3a0e3-0cc7-4a02-8194-3b2a25a458c1))
     (instances
-      (project "CAN Bus 1051-3"
+      (project "CAN Bus 1051-3 alt"
         (path "/3c4f2f61-f2e4-453b-9b61-3175a2246669"
           (reference "#PWR01") (unit 1)
         )
@@ -1287,7 +1356,7 @@
     (pin "1" (uuid a86009e6-fe69-4650-a73a-34a5af42826d))
     (pin "2" (uuid 9362b611-636d-4133-9f0e-dd03bf69f3da))
     (instances
-      (project "CAN Bus 1051-3"
+      (project "CAN Bus 1051-3 alt"
         (path "/3c4f2f61-f2e4-453b-9b61-3175a2246669"
           (reference "C5") (unit 1)
         )
@@ -1312,7 +1381,7 @@
     )
     (pin "1" (uuid 215274cd-16bd-4527-af95-db7ed051f677))
     (instances
-      (project "CAN Bus 1051-3"
+      (project "CAN Bus 1051-3 alt"
         (path "/3c4f2f61-f2e4-453b-9b61-3175a2246669"
           (reference "#PWR010") (unit 1)
         )
@@ -1347,7 +1416,7 @@
     (pin "1" (uuid 831701cf-2666-4814-9652-d6fb0865971c))
     (pin "2" (uuid 1434fd74-3a56-4598-9cc3-b605bbcc9307))
     (instances
-      (project "CAN Bus 1051-3"
+      (project "CAN Bus 1051-3 alt"
         (path "/3c4f2f61-f2e4-453b-9b61-3175a2246669"
           (reference "C4") (unit 1)
         )
@@ -1355,13 +1424,13 @@
     )
   )
 
-  (symbol (lib_id "Connector:Conn_01x03_Pin") (at 231.14 99.06 180) (unit 1)
+  (symbol (lib_id "Connector:Conn_01x03_Pin") (at 231.14 99.06 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b19a8d0d-0c2c-4d38-a8b9-1e247baefda4)
-    (property "Reference" "J2" (at 228.6 90.17 0)
+    (property "Reference" "J2" (at 228.6 107.95 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Value" "Conn_01x03_Pin" (at 228.6 92.71 0)
+    (property "Value" "Conn_01x03_Pin" (at 228.6 105.41 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" (at 231.14 99.06 0)
@@ -1377,7 +1446,7 @@
     (pin "1" (uuid d45ee451-8918-4847-be57-14225f71b196))
     (pin "2" (uuid 97d935ef-6197-4477-a19f-47aa162598cc))
     (instances
-      (project "CAN Bus 1051-3"
+      (project "CAN Bus 1051-3 alt"
         (path "/3c4f2f61-f2e4-453b-9b61-3175a2246669"
           (reference "J2") (unit 1)
         )
@@ -1385,24 +1454,24 @@
     )
   )
 
-  (symbol (lib_id "power:+3V3") (at 132.08 69.85 0) (unit 1)
+  (symbol (lib_id "power:+3V3") (at 114.3 71.12 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b6b7b5c6-7d6d-4506-8cca-a56813bec969)
-    (property "Reference" "#PWR06" (at 132.08 73.66 0)
+    (property "Reference" "#PWR06" (at 114.3 74.93 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "+3V3" (at 132.08 66.04 0)
+    (property "Value" "+3V3" (at 114.3 67.31 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 132.08 69.85 0)
+    (property "Footprint" "" (at 114.3 71.12 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 132.08 69.85 0)
+    (property "Datasheet" "" (at 114.3 71.12 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 953ccedb-9009-4cb4-9032-c8e372e40697))
     (instances
-      (project "CAN Bus 1051-3"
+      (project "CAN Bus 1051-3 alt"
         (path "/3c4f2f61-f2e4-453b-9b61-3175a2246669"
           (reference "#PWR06") (unit 1)
         )
@@ -1427,7 +1496,7 @@
     )
     (pin "1" (uuid f7f9d43b-959b-46aa-99e6-d6261a86912f))
     (instances
-      (project "CAN Bus 1051-3"
+      (project "CAN Bus 1051-3 alt"
         (path "/3c4f2f61-f2e4-453b-9b61-3175a2246669"
           (reference "#PWR04") (unit 1)
         )
@@ -1435,24 +1504,24 @@
     )
   )
 
-  (symbol (lib_id "power:+4V") (at 129.54 59.69 0) (unit 1)
+  (symbol (lib_id "power:+4V") (at 99.06 68.58 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid be4fd555-2934-43a5-bcac-e4eb893ed8fb)
-    (property "Reference" "#PWR05" (at 129.54 63.5 0)
+    (property "Reference" "#PWR05" (at 99.06 72.39 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "+4V" (at 129.54 55.88 0)
+    (property "Value" "+4V" (at 99.06 64.77 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 129.54 59.69 0)
+    (property "Footprint" "" (at 99.06 68.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 129.54 59.69 0)
+    (property "Datasheet" "" (at 99.06 68.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 9ab99548-8d08-492a-a663-e4851c28cdad))
     (instances
-      (project "CAN Bus 1051-3"
+      (project "CAN Bus 1051-3 alt"
         (path "/3c4f2f61-f2e4-453b-9b61-3175a2246669"
           (reference "#PWR05") (unit 1)
         )
@@ -1487,7 +1556,7 @@
     (pin "1" (uuid f4c8a1a1-0189-4194-ab16-a35e1baf1087))
     (pin "2" (uuid 473acf4d-3925-4e3e-8d51-531df18d8973))
     (instances
-      (project "CAN Bus 1051-3"
+      (project "CAN Bus 1051-3 alt"
         (path "/3c4f2f61-f2e4-453b-9b61-3175a2246669"
           (reference "C2") (unit 1)
         )
@@ -1512,7 +1581,7 @@
     )
     (pin "1" (uuid f478f6d8-acc4-439e-b98f-d042950a6c09))
     (instances
-      (project "CAN Bus 1051-3"
+      (project "CAN Bus 1051-3 alt"
         (path "/3c4f2f61-f2e4-453b-9b61-3175a2246669"
           (reference "#PWR011") (unit 1)
         )
@@ -1537,7 +1606,7 @@
     )
     (pin "1" (uuid 7f4abdf9-1b72-4438-98d0-30dbec9e385b))
     (instances
-      (project "CAN Bus 1051-3"
+      (project "CAN Bus 1051-3 alt"
         (path "/3c4f2f61-f2e4-453b-9b61-3175a2246669"
           (reference "#PWR012") (unit 1)
         )
@@ -1545,24 +1614,24 @@
     )
   )
 
-  (symbol (lib_id "power:PWR_FLAG") (at 132.08 72.39 270) (unit 1)
+  (symbol (lib_id "power:PWR_FLAG") (at 114.3 73.66 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ec96ed27-e965-40be-8114-317b7ba8bb76)
-    (property "Reference" "#FLG01" (at 133.985 72.39 0)
+    (property "Reference" "#FLG01" (at 116.205 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "PWR_FLAG" (at 135.89 72.39 90)
+    (property "Value" "PWR_FLAG" (at 118.11 73.66 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 132.08 72.39 0)
+    (property "Footprint" "" (at 114.3 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 132.08 72.39 0)
+    (property "Datasheet" "~" (at 114.3 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 01a64aec-e98f-4475-9dd9-6fdb869b4059))
     (instances
-      (project "CAN Bus 1051-3"
+      (project "CAN Bus 1051-3 alt"
         (path "/3c4f2f61-f2e4-453b-9b61-3175a2246669"
           (reference "#FLG01") (unit 1)
         )
@@ -1597,7 +1666,7 @@
     (pin "1" (uuid 9af4399f-f1a8-4801-9ff6-1beffa442ed0))
     (pin "2" (uuid b56132f9-dcec-4eec-bb55-92b0d7c1790a))
     (instances
-      (project "CAN Bus 1051-3"
+      (project "CAN Bus 1051-3 alt"
         (path "/3c4f2f61-f2e4-453b-9b61-3175a2246669"
           (reference "C3") (unit 1)
         )
@@ -1632,7 +1701,7 @@
     (pin "1" (uuid 7fa7be43-03d2-43e6-a89c-799e671e64a1))
     (pin "2" (uuid 618affd6-6e8c-4a1c-9ac6-b5c8e97bc78d))
     (instances
-      (project "CAN Bus 1051-3"
+      (project "CAN Bus 1051-3 alt"
         (path "/3c4f2f61-f2e4-453b-9b61-3175a2246669"
           (reference "C1") (unit 1)
         )
